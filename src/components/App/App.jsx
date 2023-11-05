@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ContactForm from '../ContactForm/ContactForm';
 import ContactList from '../ContactList/ContactList';
 import Filter from '../Filter/Filter';
-import css from "./App.module.css"
+import css from "./App.module.css";
 import { AiFillPhone, AiFillContacts } from "react-icons/ai";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
