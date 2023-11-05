@@ -12,6 +12,11 @@ class App extends Component {
     filter: '',
   };
 
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+
   handleSubmit = (newContact) => {
     if (this.state.contacts.some((contact) => contact.name === newContact.name)) {
       Notify.failure(`${newContact.name} вже є в списку контактів.`, {
